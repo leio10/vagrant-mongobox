@@ -1,7 +1,7 @@
 vagrant-mongobox
 ================
 
-A simple little Vagrant box for running MongoDB
+A simple little Vagrant box for running the current stable version of MongoDB.
 
 1. Install VirtualBox 4.0.
 
@@ -9,7 +9,7 @@ A simple little Vagrant box for running MongoDB
 
    ```
    gem install vagrant
-   git clone --recursive https://github.com/bobthecow/vagrant-mongobox.git mongobox
+   git clone --recursive https://github.com/leio10/vagrant-mongobox.git mongobox
    cd mongobox
    vagrant up
    ```
