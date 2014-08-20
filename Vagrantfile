@@ -1,15 +1,9 @@
+Vagrant.configure("2") do |config|
+  config.vm.box     = "ubuntu/trusty64"
 
-
-Vagrant::Config.run do |config|
-  config.vm.host_name = "mongobox"
-  config.vm.box       = "precise64"
-  config.vm.box_url   = "http://files.vagrantup.com/precise64.box"
-
-  # config.vm.network "33.33.33.10"
-  config.vm.forward_port 27017, 27018
+  config.vm.network :forwarded_port, host: 27018, guest: 27017  
 
   config.vm.provision :puppet do |puppet|
-
     puppet.manifests_path = "manifests"
     puppet.manifest_file  = "base.pp"
     puppet.module_path    = "modules"
@@ -17,4 +11,6 @@ Vagrant::Config.run do |config|
       "fqdn" => "mongobox"
     }
   end
+
+  config.vm.synced_folder "files/", "/srv/files"
 end
