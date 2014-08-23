@@ -1,7 +1,7 @@
 vagrant-mongobox
 ================
 
-A simple little Vagrant box for running the current stable version of MongoDB.
+A Vagrant box for running the lastest release of MongoDB from official repository that includes sample data to work with.
 
 1. Install VirtualBox 4.0.
 
@@ -22,4 +22,4 @@ A simple little Vagrant box for running the current stable version of MongoDB.
    mongo --port 27018
    ```
 
-4. Profit!
+4. Start to generate data! Or make use of a very nice database (called fwd) generated with the <a href="https://github.com/getfwd">Forward</a> project.
