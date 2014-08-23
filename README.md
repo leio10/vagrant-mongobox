@@ -1,7 +1,7 @@
 vagrant-mongobox
 ================
 
-A Vagrant box for running the lastest release of MongoDB from official repository. Includes sample data generated from Forward (https://github.com/getfwd) project.
+A Vagrant box for running the lastest release of MongoDB from official repository that includes sample data to work with.
 
 1. Install VirtualBox 4.0.
 
