@@ -13,4 +13,7 @@ Vagrant.configure("2") do |config|
   end
 
   config.vm.synced_folder "files/", "/srv/files"
+
+  config.vm.provision "shell", 
+    inline: "cd /srv/files && mongorestore"
 end
