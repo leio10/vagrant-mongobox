@@ -3,6 +3,8 @@ vagrant-mongobox
 
 A Vagrant box for running the lastest release of MongoDB from official repository that includes sample data to work with.
 
+This is forked from https://github.com/bobthecow/vagrant-mongobox.
+
 1. Install VirtualBox 4.0.
 
 2. Do this. In a terminal:
