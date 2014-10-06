@@ -1,7 +1,7 @@
 Vagrant.configure("2") do |config|
   config.vm.box     = "ubuntu/trusty64"
 
-  config.vm.network :forwarded_port, host: 27018, guest: 27017  
+  config.vm.network :forwarded_port, host: 17017, guest: 27017  
 
   config.vm.provision :puppet do |puppet|
     puppet.manifests_path = "manifests"
