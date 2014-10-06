@@ -21,7 +21,7 @@ This is forked from https://github.com/bobthecow/vagrant-mongobox.
 3. Connect to your new dedicated MongoDB virtual machine on localhost port 27018:
 
    ```
-   mongo --port 27018
+   mongo --port 17017
    ```
 
 4. Start to generate data! Or make use of a very nice database (called fwd) generated with the <a href="https://github.com/getfwd">Forward</a> project.
